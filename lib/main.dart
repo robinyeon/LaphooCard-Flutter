@@ -33,7 +33,7 @@ class Grade extends StatelessWidget {
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Text(
                 'NAME',
                 style: TextStyle(color: Colors.brown, letterSpacing: 2.0)
@@ -49,7 +49,74 @@ class Grade extends StatelessWidget {
                   fontSize: 28.0,
                   fontWeight: FontWeight.bold
               ),
-            )
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Text(
+                'CUTENESS LEVEL',
+                style: TextStyle(color: Colors.brown, letterSpacing: 2.0)
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              'MAX',
+              style: TextStyle(
+                  color: Colors.brown,
+                  letterSpacing: 2.0,
+                  fontSize: 28.0,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Row(
+              children: const [
+                Icon(Icons.check_circle_outline),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text('have a big appetite',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        letterSpacing: 1.0 ,
+                        color: Colors.brown
+                    )
+                )
+              ],
+            ),
+            Row(
+              children: const [
+                Icon(Icons.check_circle_outline),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text('love family',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        letterSpacing: 1.0 ,
+                        color: Colors.brown
+                    )
+                )
+              ],
+            ),
+            Row(
+              children: const [
+                Icon(Icons.check_circle_outline),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text('smarter than any other human being',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        letterSpacing: 1.0 ,
+                        color: Colors.brown
+                    )
+                )
+              ],
+            ),
           ],
         ),
       ),
