@@ -10,29 +10,31 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'laphoo card',
       theme: ThemeData(
-        primarySwatch: Colors.green
+        primarySwatch: Colors.brown
       ),
-     home: MyHomePage(),
+     home: MyCard(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class MyCard extends StatelessWidget {
+  const MyCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First app')
+        title: Text('Laphoo'),
+        centerTitle: true,
+        elevation: 0.0,
       ),
       body: Center(
         child: Column(
-          children: [
-            Text('Hello')
-          ],
-        ),
-      ),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[Text('hello'), Text('hello'), Text('hello')],
+          ),
+      )
+
     );
   }
 }
