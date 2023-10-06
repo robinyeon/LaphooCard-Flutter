@@ -1,6 +1,6 @@
-# laphoo_album
+# Laphoo Card
 
-A new Flutter project.
+Basic Flutter practice
 
 ## Getting Started
 
