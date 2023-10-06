@@ -23,17 +23,36 @@ class Grade extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange[100],
       appBar: AppBar(
         title: Text('Laphoo'),
         centerTitle: true,
         elevation: 0.0,
       ),
-      body: Center(
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
         child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[Text('hello'), Text('hello'), Text('hello')],
-          ),
-      )
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: const [
+            Text(
+                'NAME',
+                style: TextStyle(color: Colors.brown, letterSpacing: 2.0)
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              'LAPHOO',
+              style: TextStyle(
+                  color: Colors.brown,
+                  letterSpacing: 2.0,
+                  fontSize: 28.0,
+                  fontWeight: FontWeight.bold
+              ),
+            )
+          ],
+        ),
+      ),
 
     );
   }
